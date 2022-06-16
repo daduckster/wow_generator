@@ -1,0 +1,14 @@
+@import '../../_variables.scss';
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE
+.headerContainer {
+  padding: 3vmin 8vmin;
+}
+
+.header {
+  font-family: 'Righteous', cursive;
+  font-size: 9vmin;
+  color: $text-light;
+  text-align: center;
+}

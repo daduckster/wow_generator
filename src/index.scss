@@ -1,0 +1,34 @@
+@import './_variables.scss';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: clip;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bg;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: $text-dark;
+  overflow-x: clip;
+
+  //////////////////////////////////////////////////////////////////////////////////////////////
+  // TABLET
+  @media screen and (min-height: 568px) and (min-width: 613px) {
+    font-size: 1.13rem;
+  }
+}

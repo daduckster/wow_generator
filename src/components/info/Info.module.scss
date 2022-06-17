@@ -1,0 +1,100 @@
+@import '../../_variables.scss';
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE
+
+.infoContainer {
+  display: grid;
+  grid-template-areas: 'head' 'infoText' 'poster';
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.infoHeader {
+  grid-area: head;
+  width: 94vmin;
+  border-bottom: 3px solid $text-light;
+  font-family: 'Righteous', cursive;
+  font-size: 1.6rem;
+  color: $text-light;
+}
+
+.textWrapper {
+  grid-area: infoText;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vmin;
+  margin-top: 5vmin;
+  width: 94vmin;
+}
+
+.lineBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.sectionName {
+  width: 40%;
+  font-weight: 700;
+}
+
+.posterBox {
+  grid-area: poster;
+  justify-self: center;
+  margin-top: 7vmin;
+  width: 70vmin;
+  height: fit-content;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// TABLET
+@media screen and (min-height: 568px) and (min-width: 613px) {
+  .infoContainer {
+    grid-template-areas: 'head .' 'infoText poster';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: flex-start;
+    column-gap: 3vmin;
+    width: 80vmin;
+  }
+
+  .infoHeader {
+    font-size: 4vmin;
+    width: auto;
+  }
+
+  .textWrapper {
+    gap: 2vmin;
+    margin-top: 3vmin;
+    width: auto;
+    padding: 0;
+  }
+
+  .posterBox {
+    margin-top: 0;
+    width: auto;
+    height: fit-content;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// DESKTOP + IPAD PRO HORIZONTAL
+@media screen and (min-height: 568px) and (min-width: 1025px) {
+  .infoContainer {
+    width: 90vmin;
+  }
+
+  .infoHeader {
+    font-size: 3vmin;
+  }
+}

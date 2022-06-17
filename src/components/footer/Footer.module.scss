@@ -76,6 +76,10 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 // TABLET
 @media screen and (min-height: 568px) and (min-width: 613px) {
+  .footerContainer {
+    font-size: 1rem;
+  }
+
   .infoSpan {
     display: inline;
   }

@@ -21,3 +21,39 @@
   height: 100%;
   object-fit: cover;
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE - HORIZONTAL
+@media screen and (max-height: 567px) {
+  .wavesContainer {
+    height: 10vmin;
+  }
+
+  .palmsContainer {
+    height: 10vmin;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// TABLET
+@media screen and (min-height: 568px) and (min-width: 613px) {
+  .wavesContainer {
+    height: 20vmin;
+  }
+
+  .palmsContainer {
+    height: 20vmin;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// DESKTOP + IPAD PRO HORIZONTAL
+@media screen and (min-height: 568px) and (min-width: 1025px) {
+  .wavesContainer {
+    height: 20vmin;
+  }
+
+  .palmsContainer {
+    height: 20vmin;
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../_variables.scss';
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE
+
+.videoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80vmin;
+  background-color: $text-dark;
+}
+
+.videoBox {
+  margin: auto;
+  width: 100vmin;
+  height: fit-content;
+
+  video {
+    display: block;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE - HORIZONTAL
+@media screen and (max-height: 567px) {
+  .videoContainer {
+    height: fit-content;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// TABLET
+@media screen and (min-height: 568px) and (min-width: 613px) {
+  .videoContainer {
+    height: fit-content;
+  }
+
+  .videoBox {
+    width: 80vmin;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// DESKTOP + IPAD PRO HORIZONTAL
+@media screen and (min-height: 568px) and (min-width: 1025px) {
+  .videoBox {
+    width: 90vmin;
+  }
+}

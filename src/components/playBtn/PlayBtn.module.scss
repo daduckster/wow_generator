@@ -2,29 +2,43 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // MOBILE
-.headerContainer {
-  padding: 3vmin 8vmin;
+
+.playBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10vmin 0 13vmin 0;
 }
 
-.header {
-  font-family: 'Righteous', cursive;
-  font-size: 9vmin;
-  color: $text-light;
-  text-align: center;
+.playBtn {
+  padding: 0.7rem 3rem;
+  border: none;
+  border-radius: 3px;
+  background-color: $accent;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: white;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // TABLET
 @media screen and (min-height: 568px) and (min-width: 613px) {
-  .header {
-    font-size: 5vmin;
+  .playBtnContainer {
+    padding: 5vmin 0 8vmin 0;
+  }
+
+  .playBtn {
+    padding: 1.7vmin 7vmin;
+    font-size: 3vmin;
   }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // DESKTOP + IPAD PRO HORIZONTAL
 @media screen and (min-height: 568px) and (min-width: 1025px) {
-  .header {
-    font-size: 4.5vmin;
+  .playBtn {
+    padding: 1.2vmin 5.5vmin;
+    font-size: 2.3vmin;
   }
 }

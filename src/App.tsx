@@ -4,6 +4,7 @@ import Header from './components/header/Header';
 import Video from './components/video/Video';
 import Info from './components/info/Info';
 import Footer from './components/footer/Footer';
+import PlayBtn from './components/playBtn/PlayBtn';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Header />
       <Video />
+      <PlayBtn />
       <Info />
       <Footer />
     </div>

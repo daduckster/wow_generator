@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from './PlayBtn.module.scss';
 
-function PlayBtn() {
+interface PropTypes {
+  getMovieData: () => void
+}
+
+function PlayBtn({ getMovieData }: PropTypes) {
   return (
     <div className={styles.playBtnContainer}>
-      <button className={styles.playBtn} type="button">GET WOWED!</button>
+      <button onClick={getMovieData} className={styles.playBtn} type="button">GET WOWED!</button>
     </div>
   );
 }

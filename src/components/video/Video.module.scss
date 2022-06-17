@@ -34,7 +34,7 @@
 // TABLET
 @media screen and (min-height: 568px) and (min-width: 613px) {
   .videoContainer {
-    height: fit-content;
+    height: 45vmin;
   }
 
   .videoBox {
@@ -45,6 +45,9 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 // DESKTOP + IPAD PRO HORIZONTAL
 @media screen and (min-height: 568px) and (min-width: 1025px) {
+  .videoContainer {
+    height: 50.6vmin;
+  }
   .videoBox {
     width: 90vmin;
   }
